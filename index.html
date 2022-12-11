@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>My Website</title>
+    <style>
+      /* Add styles for the website here */
+      body {
+        background: url("zap.png") repeat;
+        font-family: sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      h1 {
+        text-align: center;
+        color: #075E54;
+        margin-bottom: 10px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #075E54;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+
+      button:hover {
+        background-color: #128C7E;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Hey there, I'm using WhatsApp</h1>
+      <button onclick="playHorseSound()">Zaaaaaaaaap</button>
+      <button onclick="redirectToGoogle()">renk renk</button>
+    </div>
+    <audio id="horse-sound" src="zap.mp3"></audio>
+    <script>
+      // Add JavaScript functions here
+      function playHorseSound() {
+        var audioElement = document.getElementById("horse-sound");
+        audioElement.play();
+      }
+      function redirectToGoogle() {
+        window.location = "https://www.google.com";
+      }
+    </script>
+ </body>
+ </html>
